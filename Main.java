@@ -39,7 +39,19 @@ class Main {
             String userInput = sc.next();
 
             if (userInput.equalsIgnoreCase("convert")) {
-                return;
+                System.out.println("Select input type:\n1. Binary\n2. Decimal\n3. Hexadecimal\n4. Octal");
+                String inputType = sc.next();
+                if (inputType.equalsIgnoreCase("binary")) {
+                    return;
+                } else if (inputType.equalsIgnoreCase("decimal")) {
+                    return;
+                } else if (inputType.equalsIgnoreCase("hexadecimal")) {
+                    return;
+                } else if (inputType.equalsIgnoreCase("octal")) {
+                    return;
+                } else {
+                    System.out.println("Invalid input. Please try again.");
+                }
             } else if (userInput.equalsIgnoreCase("exit")) {
                 System.out.println("Exiting program...");
                 System.exit(0);
