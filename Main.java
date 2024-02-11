@@ -34,5 +34,7 @@ class Main {
                 System.out.println("Invalid input. Please try again.");
             }
         }
+
+        sc.close();
     }
 }
