@@ -15,7 +15,8 @@ class Main {
                 case 1:
                     break;
                 case 2:
-                    break;
+                    System.out.println("Exiting program...");
+                    System.exit(0);
                 case 3:
                     System.out.println("Invalid input. Please try again.");
             }
@@ -27,10 +28,10 @@ class Main {
             if (userInput.equalsIgnoreCase("convert")) {
                 return;
             } else if (userInput.equalsIgnoreCase("exit")) {
-                return;
+                System.out.println("Exiting program...");
+                System.exit(0);
             } else {
                 System.out.println("Invalid input. Please try again.");
-                ;
             }
         }
     }
