@@ -6,14 +6,27 @@ class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Number Conversion Tool:\n1. Convert\n2. Exit");
+        System.out.println("Number Conversion Tool:\n1. Convert\n2. Exit ");
 
         if (sc.hasNextInt()) {
             int choice = sc.nextInt();
 
             switch (choice) {
                 case 1:
-                    break;
+                    System.out.println("Select input type:\n1. Binary\n2. Decimal\n3. Hexadecimal\n4. Octal");
+                    int inputType = sc.nextInt();
+                    if (inputType == 1) {
+                        break;
+                    } else if (inputType == 2) {
+                        break;
+                    } else if (inputType == 3) {
+                        break;
+                    } else if (inputType == 4) {
+                        break;
+                    } else {
+                        System.out.println("Invalid input. Please try again.");
+                    }
+
                 case 2:
                     System.out.println("Exiting program...");
                     System.exit(0);
