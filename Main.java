@@ -17,12 +17,16 @@ class Main {
                     int inputType = sc.nextInt();
                     if (inputType == 1) {
                         System.out.println("Number to convert: ");
+                        sc.nextInt();
                     } else if (inputType == 2) {
                         System.out.println("Number to convert: ");
+                        sc.nextInt();
                     } else if (inputType == 3) {
                         System.out.println("Number to convert: ");
+                        sc.nextInt();
                     } else if (inputType == 4) {
                         System.out.println("Number to convert: ");
+                        sc.nextInt();
                     } else {
                         System.out.println("Invalid input. Please try again.");
                     }
@@ -43,12 +47,16 @@ class Main {
                 String inputType = sc.next();
                 if (inputType.equalsIgnoreCase("binary")) {
                     System.out.println("Number to convert: ");
+                    sc.nextInt();
                 } else if (inputType.equalsIgnoreCase("decimal")) {
                     System.out.println("Number to convert: ");
+                    sc.nextInt();
                 } else if (inputType.equalsIgnoreCase("hexadecimal")) {
                     System.out.println("Number to convert: ");
+                    sc.nextInt();
                 } else if (inputType.equalsIgnoreCase("octal")) {
                     System.out.println("Number to convert: ");
+                    sc.nextInt();
                 } else {
                     System.out.println("Invalid input. Please try again.");
                 }
