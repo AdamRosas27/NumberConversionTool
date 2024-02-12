@@ -1,14 +1,14 @@
 public class HexadecimalConversion {
 
-    public int binaryToHexadecimal() {
+    public int hexadecimalToBinary() {
         return 0;
     }
 
-    public int decimalToHexadecimal() {
+    public int hexadecimalToDecimal() {
         return 0;
     }
 
-    public int octalToHexadecimal() {
+    public int hexadecimalToOctal() {
         return 0;
     }
 }
