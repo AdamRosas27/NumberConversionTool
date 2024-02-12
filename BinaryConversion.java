@@ -1,24 +1,14 @@
 public class BinaryConversion {
 
-    public int decimalToBinary(int userNumber) {
-        if (userNumber == 0) {
-            return "0";
-        }
-
-        StringBuilder binary = new StringBuilder();
-        while (userNumber > 0) {
-            int remainder = userNumber % 2;
-            binary.insert(0, remainder);
-            userNumber /= 2;
-        }
-        return userNumber.toString();
-    }
-
-    public int hexadecimalToBinary() {
+    public int binaryToDecimal() {
         return 0;
     }
 
-    public int octalToBinary() {
+    public int binaryToHexadecimal() {
+        return 0;
+    }
+
+    public int binaryToOctal() {
         return 0;
     }
 }
