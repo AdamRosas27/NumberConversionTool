@@ -46,7 +46,13 @@ class Main {
             System.out.println("Octal: " + converter.hexadecimalToOctal());
           } else if (inputType == 4) {
             System.out.println("Enter octal value: ");
-            sc.nextInt();
+            String octalValue = sc.nextLine();
+            OctalConversion converter = new OctalConversion(octalValue);
+            System.out.println("Binary: " + converter.octalToBinary());
+            System.out.println("Decimal: " + converter.octalToDecimal());
+            System.out.println(
+              "Hexadecimal: " + converter.octalToHexadecimal()
+            );
           } else {
             System.out.println("Invalid input. Please try again.");
           }
