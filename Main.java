@@ -29,7 +29,7 @@ class Main {
           } else if (inputType == 2) {
             System.out.println("Enter decimal value: ");
             int decimalValue = sc.nextInt();
-            DecimalConversion converter = new DecimalConversion(decimalValue); // Example decimal number
+            DecimalConversion converter = new DecimalConversion(decimalValue);
             System.out.println("Binary: " + converter.decimalToBinary());
             System.out.println(
               "Hexadecimal: " + converter.decimalToHexadecimal()
@@ -37,7 +37,13 @@ class Main {
             System.out.println("Octal: " + converter.decimalToOctal());
           } else if (inputType == 3) {
             System.out.println("Enter hexadecimal value: ");
-            sc.nextInt();
+            String hexadecimalValue = sc.nextLine();
+            HexadecimalConversion converter = new HexadecimalConversion(
+              hexadecimalValue
+            );
+            System.out.println("Binary: " + converter.hexadecimalToBinary());
+            System.out.println("Decimal: " + converter.hexadecimalToDecimal());
+            System.out.println("Octal: " + converter.hexadecimalToOctal());
           } else if (inputType == 4) {
             System.out.println("Enter octal value: ");
             sc.nextInt();
