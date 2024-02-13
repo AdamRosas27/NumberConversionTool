@@ -23,10 +23,8 @@ public class BinaryConversion {
     String hexChars = "0123456789ABCDEF";
     int sum = 0;
     int length = binaryString.length();
-    // Process each group of 4 bits
     for (int i = 0; i < length; i += 4) {
       sum = 0;
-      // Process each bit in the group
       for (int j = 0; j < 4 && (i + j) < length; j++) {
         char bit = binaryString.charAt(length - 1 - (i + j));
         if (bit == '1') {

@@ -18,6 +18,7 @@ class Main {
           int inputType = sc.nextInt();
           if (inputType == 1) {
             System.out.println("Enter binary value: ");
+            sc.nextLine();
             String binaryString = sc.nextLine();
 
             BinaryConversion converter = new BinaryConversion(binaryString);
@@ -37,6 +38,7 @@ class Main {
             System.out.println("Octal: " + converter.decimalToOctal());
           } else if (inputType == 3) {
             System.out.println("Enter hexadecimal value: ");
+            sc.nextLine();
             String hexadecimalValue = sc.nextLine();
             HexadecimalConversion converter = new HexadecimalConversion(
               hexadecimalValue
@@ -56,11 +58,11 @@ class Main {
           } else {
             System.out.println("Invalid input. Please try again.");
           }
+          break;
         case 2:
           System.out.println("Exiting program...");
           System.exit(0);
-        case 3:
-          System.out.println("Invalid input. Please try again.");
+          break;
       }
     } else {
       String userInput = sc.next();
@@ -88,8 +90,6 @@ class Main {
       } else if (userInput.equalsIgnoreCase("exit")) {
         System.out.println("Exiting program...");
         System.exit(0);
-      } else {
-        System.out.println("Invalid input. Please try again.");
       }
     }
 
